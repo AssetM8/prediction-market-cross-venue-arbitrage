@@ -1,0 +1,53 @@
+# Paper trading only. `make docker-up` builds and starts the API (fixture data by default,
+# demo trades pre-loaded) and the dashboard on http://localhost:8080.
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim}
+        BACKEND_EXTRAS: ${BACKEND_EXTRAS:-}
+    environment:
+      DATA_MODE: ${DATA_MODE:-fixture}
+      PAPER_TRADING_ONLY: "true"
+      RUN_DEMO_ON_START: ${RUN_DEMO_ON_START:-true}
+      DATABASE_URL: ${DOCKER_DATABASE_URL:-sqlite+aiosqlite:////srv/data/arbitrage.db}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      CORS_ORIGINS: http://localhost:8080
+      OPTIONAL_LLM_PROVIDER: ${OPTIONAL_LLM_PROVIDER:-none}
+      OPTIONAL_LLM_MODEL: ${OPTIONAL_LLM_MODEL:-}
+      OPTIONAL_LLM_API_KEY: ${OPTIONAL_LLM_API_KEY:-}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - backend-data:/srv/data
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:22-alpine}
+    environment:
+      VITE_API_PROXY: http://backend:8000
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  # Optional PostgreSQL (docker compose --profile postgres up). Point the backend at it with
+  # DOCKER_DATABASE_URL=postgresql+asyncpg://arb:arb@postgres:5432/arb and
+  # BACKEND_EXTRAS="--extra postgres" (see docs/OPERATIONS.md).
+  postgres:
+    image: postgres:16-alpine
+    profiles: ["postgres"]
+    environment:
+      POSTGRES_USER: arb
+      POSTGRES_PASSWORD: arb
+      POSTGRES_DB: arb
+    ports:
+      - "127.0.0.1:5432:5432"
+
+volumes:
+  backend-data:

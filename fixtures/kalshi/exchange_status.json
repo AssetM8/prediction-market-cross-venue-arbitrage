@@ -1,0 +1,7 @@
+{
+  "exchange_active": true,
+  "trading_active": true,
+  "intra_exchange_transfers_active": true,
+  "exchange_estimated_resume_time": null,
+  "exchange_index_statuses": []
+}

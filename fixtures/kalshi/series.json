@@ -1,0 +1,279 @@
+{
+  "series": [
+    {
+      "ticker": "KXFEDDECISION",
+      "title": "Fed rate decision",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxfeddecision",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxfeddecision.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXUNRATE",
+      "title": "Unemployment rate",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxunrate",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxunrate.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXCPIYOY",
+      "title": "CPI year-over-year",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxcpiyoy",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxcpiyoy.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXGDP",
+      "title": "GDP growth",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "Bureau of Economic Analysis",
+          "url": "https://www.bea.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxgdp",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxgdp.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXINXY",
+      "title": "S&P 500 year-end",
+      "category": "Financials",
+      "settlement_sources": [
+        {
+          "name": "S&P Dow Jones Indices",
+          "url": "https://www.spglobal.com/spdji/"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Financials"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxinxy",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxinxy.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXBTCD",
+      "title": "Bitcoin daily price",
+      "category": "Crypto",
+      "settlement_sources": [
+        {
+          "name": "CF Benchmarks",
+          "url": "https://www.cfbenchmarks.com"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Crypto"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxbtcd",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxbtcd.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXSENATEOH",
+      "title": "Ohio Senate race",
+      "category": "Politics",
+      "settlement_sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Politics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxsenateoh",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxsenateoh.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXPRESPARTY",
+      "title": "Presidential election party",
+      "category": "Politics",
+      "settlement_sources": [
+        {
+          "name": "Associated Press",
+          "url": "https://apnews.com"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Politics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxpresparty",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxpresparty.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXECBRATE",
+      "title": "ECB deposit rate",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "European Central Bank",
+          "url": "https://www.ecb.europa.eu"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxecbrate",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxecbrate.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXPAYROLLS",
+      "title": "Nonfarm payrolls",
+      "category": "Economics",
+      "settlement_sources": [
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Economics"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxpayrolls",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxpayrolls.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    },
+    {
+      "ticker": "KXHIGHNY",
+      "title": "NYC high temperature",
+      "category": "Climate and Weather",
+      "settlement_sources": [
+        {
+          "name": "National Weather Service",
+          "url": "https://www.weather.gov"
+        }
+      ],
+      "frequency": "custom",
+      "categories": [
+        "Climate and Weather"
+      ],
+      "tags": [],
+      "contract_url": "https://kalshi.com/contracts/kxhighny",
+      "contract_terms_url": "https://kalshi.com/regulatory/kxhighny.pdf",
+      "product_metadata": null,
+      "fee_type": "quadratic",
+      "fee_multiplier": 1,
+      "additional_prohibitions": null,
+      "volume_fp": "100000.00",
+      "last_updated_ts": "2026-09-22T14:00:00Z",
+      "exchange_index": 0
+    }
+  ]
+}

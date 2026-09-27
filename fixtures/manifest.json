@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-09-25T14:00:00Z",
+  "synthetic": true,
+  "description": "Synthetic, deterministic fixture set in documented Kalshi/Polymarket wire formats. Names, prices and dates are invented; nothing here describes a real listing.",
+  "expected": {
+    "approved_pairs": {
+      "KXFEDDECISION-26DEC-C25|610001": "EQUIVALENT",
+      "KXUNRATE-26OCT-T4.5|610002": "EQUIVALENT",
+      "KXCPIYOY-26NOV-T3.0|610003": "COMPLEMENTARY",
+      "KXECBRATE-26OCT-CUT|610010": "EQUIVALENT"
+    },
+    "rejected_pairs": {
+      "KXARTEMIS3-27JUL|610007": "A_IMPLIES_B",
+      "KXINXY-26DEC31-T7000|610005": "A_IMPLIES_B",
+      "KXSENATEOH-26-JAVE|610008": "UNRELATED",
+      "KXPRESPARTY-28-DEM|610009": "PARTIALLY_OVERLAPPING",
+      "KXGDP-26Q3-T3.0|610004": "B_IMPLIES_A",
+      "KXBTCD-26DEC3117-T150000|610006": "AMBIGUOUS",
+      "KXFEDDECISION-26DEC-H0|610001": "MUTUALLY_EXCLUSIVE"
+    },
+    "cases": {
+      "true_equivalent": "KXFEDDECISION-26DEC-C25|610001",
+      "complementary": "KXCPIYOY-26NOV-T3.0|610003",
+      "same_topic_different_deadline": "KXARTEMIS3-27JUL|610007",
+      "same_event_different_threshold": "KXINXY-26DEC31-T7000|610005",
+      "same_candidate_different_office": "KXSENATEOH-26-JAVE|610008",
+      "election_vs_popular_vote": "KXPRESPARTY-28-DEM|610009",
+      "at_least_vs_greater_than": "KXGDP-26Q3-T3.0|610004",
+      "different_resolution_sources": "KXBTCD-26DEC3117-T150000|610006",
+      "independently_worded_equivalent": "KXUNRATE-26OCT-T4.5|610002",
+      "stale_book_suppression": "KXECBRATE-26OCT-CUT|610010"
+    },
+    "validated_opportunities": [
+      "KXFEDDECISION-26DEC-C25|610001|A",
+      "KXCPIYOY-26NOV-T3.0|610003|C"
+    ],
+    "ineligible_markets": [
+      "kalshi:KXPAYROLLS-26OCT",
+      "kalshi:KXHIGHNY-26SEP24-T80",
+      "polymarket:610011",
+      "polymarket:610012",
+      "polymarket:610013"
+    ]
+  }
+}

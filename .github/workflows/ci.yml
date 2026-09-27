@@ -1,0 +1,111 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: arb
+          POSTGRES_PASSWORD: arb
+          POSTGRES_DB: arb
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U arb" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+      - run: uv python install 3.12
+      - run: uv sync --frozen --all-extras
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+      - name: Type check
+        run: uv run mypy app tests
+      - name: Tests (SQLite + PostgreSQL)
+        env:
+          TEST_POSTGRES_URL: postgresql+asyncpg://arb:arb@127.0.0.1:5432/arb
+        run: uv run pytest -q
+      - name: Deterministic fixture demo
+        run: uv run python -m app.cli demo
+
+  frontend:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  e2e:
+    runs-on: ubuntu-24.04
+    needs: [backend, frontend]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+      - run: uv python install 3.12
+      - run: cd backend && uv sync --frozen
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: cd frontend && npm ci --no-audit --no-fund
+      - run: cd frontend && npx playwright install --with-deps chromium
+      - run: cd frontend && npx playwright test
+        env:
+          CI: "true"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-artifacts
+          path: frontend/test-results
+
+  docker:
+    runs-on: ubuntu-24.04
+    needs: [backend, frontend]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and start the stack
+        run: docker compose up -d --build --wait
+      - name: Smoke test
+        run: |
+          curl -fsS http://localhost:8000/health | tee /dev/stderr | grep '"paper_trading_only":true'
+          curl -fsS "http://localhost:8000/api/opportunities?status=validated" | grep -q '"status":"validated"'
+          curl -fsS http://localhost:8080/ | grep -qi "paper trading only"
+          curl -fsS http://localhost:8080/api/config/public | grep -q '"paper_trading_only":true'
+      - name: Logs
+        if: always()
+        run: docker compose logs --no-color
+      - run: docker compose down -v

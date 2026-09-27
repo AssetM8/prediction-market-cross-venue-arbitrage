@@ -1,0 +1,771 @@
+{
+  "markets": [
+    {
+      "id": "610001",
+      "question": "Fed decreases interest rates by 25 bps after December 2026 meeting?",
+      "conditionId": "0x8975a707b50fcfdf930ac4bc0146b3bbc7a5e36672c118270d0bc34a279e4976",
+      "slug": "fed-decision-in-december-2026-610001",
+      "description": "This market will resolve to \"Yes\" if the Federal Reserve decreases the upper bound of the target federal funds range by exactly 25 basis points at its December 15-16, 2026 meeting. Otherwise, this market will resolve to \"No\". The resolution source for this market is the FOMC statement released after the meeting on federalreserve.gov. If the meeting is postponed, the outcome of the rescheduled meeting will be used.",
+      "resolutionSource": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "endDate": "2026-12-16T20:00:00Z",
+      "endDateIso": "2026-12-16",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"97186178713253503429383682094451674991669034995524732400123052360811933012342\", \"50484644014875336382859289887104162093310288163737184347655764193606418232001\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71001",
+          "title": "Fed decision in December 2026",
+          "slug": "fed-decision-in-december-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610002",
+      "question": "October 2026 US unemployment rate greater than 4.5%?",
+      "conditionId": "0x66dfa340addc9f8659ac01186fd98decdb6ec873e8077e82b3edb183f67c676d",
+      "slug": "us-unemployment-oct-2026-610002",
+      "description": "This market will resolve to \"Yes\" if the United States unemployment rate (SA) for October 2026, as initially published by the U.S. Bureau of Labor Statistics in its Employment Situation release, is higher than 4.5%. Otherwise it resolves to \"No\". The rate is published rounded to one decimal place. Resolution is based on the initial publication, regardless of any later revisions. If the release is postponed, this market will remain open until the release.",
+      "resolutionSource": "https://www.bls.gov/news.release/empsit.toc.htm",
+      "endDate": "2026-11-06T14:00:00Z",
+      "endDateIso": "2026-11-06",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"45797256542244031261285494397948860632076455104616093571175444342709104455797\", \"63921258888084561495879584127175617061915075208955373357399758105845889974219\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71002",
+          "title": "US unemployment rate October 2026",
+          "slug": "us-unemployment-oct-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610003",
+      "question": "November 2026 CPI YoY at or below 3.0%?",
+      "conditionId": "0x8552db3eb12d65362a87a9f1b4fd396de4b80670cb7dc3bdce1dcec2ae5d6365",
+      "slug": "november-2026-cpi-610003",
+      "description": "This market will resolve to \"Yes\" if the year-over-year CPI-U inflation rate for November 2026 (NSA) in the United States, as initially published by the U.S. Bureau of Labor Statistics, is at or below 3.0%. The figure is published rounded to one decimal place. The market resolves on the initial release, regardless of any later revisions. If the release is postponed, this market will remain open until the release.",
+      "resolutionSource": "https://www.bls.gov/cpi/",
+      "endDate": "2026-12-10T14:00:00Z",
+      "endDateIso": "2026-12-10",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"85530229511368496281119018519969400766064322382735381661467697218025092080612\", \"72334954805278158955836321345067042191565384880025969155022037865887648060853\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71003",
+          "title": "November 2026 CPI",
+          "slug": "november-2026-cpi"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610004",
+      "question": "US Q3 2026 GDP growth greater than 3.0%?",
+      "conditionId": "0x6a585d1ce51285a66c4354dc6b080645ef150159c0c52432cc4813a350e7145c",
+      "slug": "us-gdp-q3-2026-610004",
+      "description": "Resolves \"Yes\" if U.S. real GDP growth (seasonally adjusted annualized rate) for Q3 2026, as initially published by the Bureau of Economic Analysis in its advance estimate, is greater than 3.0%. The rate is published rounded to one decimal place. Later revisions are ignored.",
+      "resolutionSource": "https://www.bea.gov/data/gdp/gross-domestic-product",
+      "endDate": "2026-10-29T13:00:00Z",
+      "endDateIso": "2026-10-29",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"74290746879951825211051358607077553254692055024345489199585682709135025346301\", \"81324848366074775725885476782626995364255397051724950251660724991897833292491\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71004",
+          "title": "US GDP Q3 2026",
+          "slug": "us-gdp-q3-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610005",
+      "question": "Will the S&P 500 close above 6,800 on December 31, 2026?",
+      "conditionId": "0x6689fcae7aae8e208333fe6e246723c9b664de98cd9556f9fda9a4f3649744d5",
+      "slug": "sp500-year-end-2026-610005",
+      "description": "Resolves \"Yes\" if the official closing level of the S&P 500 on December 31, 2026, as published by S&P Dow Jones Indices, is greater than 6,800. If markets are closed on that date, the most recent official close is used.",
+      "resolutionSource": "https://www.spglobal.com/spdji/",
+      "endDate": "2026-12-31T22:00:00Z",
+      "endDateIso": "2026-12-31",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Finance",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"63352992372252098035036774194336143291589568553313662272709631304724672748154\", \"38780780816734784022097358492281448541225268072642456217627918404126769345917\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71005",
+          "title": "S&P 500 year-end 2026",
+          "slug": "sp500-year-end-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610006",
+      "question": "Bitcoin above $150,000 on December 31, 2026 at 5:00 PM ET?",
+      "conditionId": "0x6d19970911cedf6cfb396401a91ce81cd111273a214c65ca3ee824904e75c43b",
+      "slug": "btc-dec-31-2026-610006",
+      "description": "Resolves \"Yes\" if the Binance BTC/USDT 1-minute candle close price at 5:00 PM ET on December 31, 2026 is higher than $150,000. Otherwise \"No\". Resolution source: Binance.",
+      "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT",
+      "endDate": "2026-12-31T22:05:00Z",
+      "endDateIso": "2026-12-31",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Crypto",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"99535616556260062955000142226460389244593649537251850919083282213271518495417\", \"33411168975156245590560520430821491525530288200744193300377682533316365922121\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71006",
+          "title": "Bitcoin price December 31, 2026",
+          "slug": "btc-dec-31-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610007",
+      "question": "Artemis III crewed Moon landing by December 31, 2027?",
+      "conditionId": "0xc9862d789870bff8e07235f06ca4b68eca1e481068316cfdb7fb8dbd80068d98",
+      "slug": "artemis-iii-landing-610007",
+      "description": "This market will resolve to \"Yes\" if NASA's Artemis III mission lands a crew on the lunar surface by December 31, 2027 (Eastern Time), as confirmed by NASA. Otherwise it resolves to No.",
+      "resolutionSource": "https://www.nasa.gov/artemis",
+      "endDate": "2027-12-31T23:59:00Z",
+      "endDateIso": "2027-12-31",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Science",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"10813447748896762929451239982400897403127670577988229260242920544385764012496\", \"61337244268135758200587863379262062971105510299360337473815035128798511776476\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71007",
+          "title": "Artemis III landing",
+          "slug": "artemis-iii-landing"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610008",
+      "question": "Will Jordan Avery win the 2026 Ohio gubernatorial election?",
+      "conditionId": "0x21663dc3496c427e52737c568cf9ea5f7f6be1cb97d87e63d7aa494bafc82db9",
+      "slug": "ohio-governor-2026-610008",
+      "description": "Resolves \"Yes\" if Jordan Avery wins the 2026 Ohio gubernatorial general election, as called by the Associated Press. If the race is contested, the market resolves based on the certified results.",
+      "resolutionSource": "https://apnews.com",
+      "endDate": "2026-11-05T15:00:00Z",
+      "endDateIso": "2026-11-05",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"92087577032613410047503571897210483571919266074027401827753675105303610800229\", \"31666882030306012146791727536918026948602808292935538006916032643407770826687\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71008",
+          "title": "Ohio Governor 2026",
+          "slug": "ohio-governor-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610009",
+      "question": "Will the Democratic candidate win the popular vote in the 2028 U.S. presidential election?",
+      "conditionId": "0x69ade2157271cd2bb5fdf02ac51ebbe75fc1bfc95993673b0fdbae110e9ec96a",
+      "slug": "2028-popular-vote-610009",
+      "description": "Resolves \"Yes\" if the Democratic Party's candidate receives the most votes nationwide (popular vote) in the 2028 United States presidential election, as reported by the Associated Press.",
+      "resolutionSource": "https://apnews.com",
+      "endDate": "2028-11-08T15:00:00Z",
+      "endDateIso": "2028-11-08",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"23473391614442934019053247942352268391224353481992033948950124290964001485831\", \"25680716909851850655799229699122395671329349399288755737780588730717241401646\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71009",
+          "title": "2028 popular vote",
+          "slug": "2028-popular-vote"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610010",
+      "question": "ECB cuts deposit facility rate at October 2026 meeting?",
+      "conditionId": "0x4b497563e676f2841a3f8fadcedd2563b8ce3c3a23a2504a64f577125d87d770",
+      "slug": "ecb-october-2026-610010",
+      "description": "Resolves \"Yes\" if the European Central Bank reduces its deposit facility rate at its monetary policy meeting on October 29, 2026. Resolution source: the official ECB press release on ecb.europa.eu. If the meeting is postponed, the outcome of the rescheduled meeting will be used.",
+      "resolutionSource": "https://www.ecb.europa.eu/press/pr/html/index.en.html",
+      "endDate": "2026-10-29T13:00:00Z",
+      "endDateIso": "2026-10-29",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"71579861605400068770853937150099316721851469504066244712339671242590508477535\", \"97796433977918841029855104243403923542456700230002551990645224481532665770642\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71010",
+          "title": "ECB October 2026",
+          "slug": "ecb-october-2026"
+        }
+      ]
+    },
+    {
+      "id": "610011",
+      "question": "Bitcoin Up or Down on September 26?",
+      "conditionId": "0x730c298f1dfcf89eecb2fc2fd20b80eb3ac9b687767bc5e68b831bea4b69e957",
+      "slug": "btc-up-down-sep-26-610011",
+      "description": "Resolves to Up if the BTC/USDT close is higher than the open.",
+      "resolutionSource": "https://www.binance.com",
+      "endDate": "2026-09-26T16:00:00Z",
+      "endDateIso": "2026-09-26",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Crypto",
+      "outcomes": "[\"Up\", \"Down\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"67456673634879856001454109518197426076748176185178107177013593851887477497671\", \"12092528770248715295575931478266896006275274029991534751927131148121934808953\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71011",
+          "title": "BTC up or down",
+          "slug": "btc-up-down-sep-26"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.07,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610012",
+      "question": "Will the 2026 Riverton mayoral debate be held before October 15?",
+      "conditionId": "0x200e505e36500fce0ced25f422af7d5b073f7458c173ccd14f7df5028c60d974",
+      "slug": "riverton-debate-610012",
+      "description": "",
+      "resolutionSource": "",
+      "endDate": "2026-10-15T04:00:00Z",
+      "endDateIso": "2026-10-15",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"25713545188613598368271184650639138432479274092770335783702614705647877470647\", \"54626148751680807295833074589231827990583556309058036044795607883661028222507\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71012",
+          "title": "Riverton debate",
+          "slug": "riverton-debate"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "610013",
+      "question": "Will the Bank of Canada cut rates in September 2026?",
+      "conditionId": "0x136fb25c04f4c5f49a56ff2e6d2c7559bcbc1b1335d82e281b4133e177c13b7f",
+      "slug": "boc-sep-2026-610013",
+      "description": "Resolved \"No\" on September 10, 2026.",
+      "resolutionSource": "https://www.bankofcanada.ca",
+      "endDate": "2026-09-10T16:00:00Z",
+      "endDateIso": "2026-09-10",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Economics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"38093063079957054773442258711599989270551100873650165670855540488820721825793\", \"60567036460474405212078865232013713216243373088716806285279783410484405925513\"]",
+      "active": true,
+      "closed": true,
+      "archived": false,
+      "acceptingOrders": false,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": false,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71013",
+          "title": "Bank of Canada September 2026",
+          "slug": "boc-sep-2026"
+        }
+      ],
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.05,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "620101",
+      "question": "Will Dana Whitfield win the 2026 Riverton mayoral election?",
+      "conditionId": "0x3f18e9e7a534b050e4890d1f57de03f55e1b082160a9e4c7ecd9868d878542df",
+      "slug": "riverton-mayor-2026-620101",
+      "description": "Resolves \"Yes\" if Dana Whitfield wins the 2026 Riverton mayoral election, as certified by the Riverton City Clerk. This market is part of a negative-risk group: exactly one market in the group resolves Yes.",
+      "resolutionSource": "Riverton City Clerk",
+      "endDate": "2026-11-04T15:00:00Z",
+      "endDateIso": "2026-11-04",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"37357942612735952553211582695142560176993294228515149780434003829793343160649\", \"37267371348091422826302961544488115731868457846893752690677693495134518194389\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": true,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71020",
+          "title": "Riverton mayoral election 2026",
+          "slug": "riverton-mayor-2026",
+          "markets": [
+            {
+              "id": "620101"
+            },
+            {
+              "id": "620102"
+            },
+            {
+              "id": "620103"
+            },
+            {
+              "id": "620104"
+            }
+          ]
+        }
+      ],
+      "negRiskMarketID": "0xbbfe6db82ef9b2a8bc1949c17ee05cce2ec230042f809fb3345596f6f9058611",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "620102",
+      "question": "Will Luis Ortega win the 2026 Riverton mayoral election?",
+      "conditionId": "0xb44639e59d917c26ec1f55e821c44e559e08c32b0c9eca0775c3cfaa6031137b",
+      "slug": "riverton-mayor-2026-620102",
+      "description": "Resolves \"Yes\" if Luis Ortega wins the 2026 Riverton mayoral election, as certified by the Riverton City Clerk. This market is part of a negative-risk group: exactly one market in the group resolves Yes.",
+      "resolutionSource": "Riverton City Clerk",
+      "endDate": "2026-11-04T15:00:00Z",
+      "endDateIso": "2026-11-04",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"38478217078055245323063338114690680076131696199867523376851383760276267700467\", \"75105059417914597717553801757466622411422925535990204998895866873834967074590\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": true,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71020",
+          "title": "Riverton mayoral election 2026",
+          "slug": "riverton-mayor-2026",
+          "markets": [
+            {
+              "id": "620101"
+            },
+            {
+              "id": "620102"
+            },
+            {
+              "id": "620103"
+            },
+            {
+              "id": "620104"
+            }
+          ]
+        }
+      ],
+      "negRiskMarketID": "0xbbfe6db82ef9b2a8bc1949c17ee05cce2ec230042f809fb3345596f6f9058611",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "620103",
+      "question": "Will Priya Raman win the 2026 Riverton mayoral election?",
+      "conditionId": "0xe6d45addf19b6748de48fef84582c160a3a6373e38987dfe6af7173c0fa29ec0",
+      "slug": "riverton-mayor-2026-620103",
+      "description": "Resolves \"Yes\" if Priya Raman wins the 2026 Riverton mayoral election, as certified by the Riverton City Clerk. This market is part of a negative-risk group: exactly one market in the group resolves Yes.",
+      "resolutionSource": "Riverton City Clerk",
+      "endDate": "2026-11-04T15:00:00Z",
+      "endDateIso": "2026-11-04",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"82223045689403842004285370160958729719232315789300575949967346209538627303277\", \"12082910786421209924881972378211141270609816401112282887006695714637140556935\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": true,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71020",
+          "title": "Riverton mayoral election 2026",
+          "slug": "riverton-mayor-2026",
+          "markets": [
+            {
+              "id": "620101"
+            },
+            {
+              "id": "620102"
+            },
+            {
+              "id": "620103"
+            },
+            {
+              "id": "620104"
+            }
+          ]
+        }
+      ],
+      "negRiskMarketID": "0xbbfe6db82ef9b2a8bc1949c17ee05cce2ec230042f809fb3345596f6f9058611",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    },
+    {
+      "id": "620104",
+      "question": "Will another candidate win the 2026 Riverton mayoral election?",
+      "conditionId": "0xf9fd73efecfcfc2b8896dc2ce6d435d2b05139a7e0308e13d011b700009adb09",
+      "slug": "riverton-mayor-2026-620104",
+      "description": "Resolves \"Yes\" if another candidate wins the 2026 Riverton mayoral election, as certified by the Riverton City Clerk. This market is part of a negative-risk group: exactly one market in the group resolves Yes.",
+      "resolutionSource": "Riverton City Clerk",
+      "endDate": "2026-11-04T15:00:00Z",
+      "endDateIso": "2026-11-04",
+      "startDate": "2026-08-16T14:00:00Z",
+      "startDateIso": "2026-08-16",
+      "category": "Politics",
+      "outcomes": "[\"Yes\", \"No\"]",
+      "outcomePrices": "[\"0.5\", \"0.5\"]",
+      "clobTokenIds": "[\"35088864142931085660024785961923874106172255483984101334276374492449045833906\", \"65763431621578650943256581317275977702606448407469724202575488959805926141577\"]",
+      "active": true,
+      "closed": false,
+      "archived": false,
+      "acceptingOrders": true,
+      "enableOrderBook": true,
+      "orderPriceMinTickSize": 0.01,
+      "orderMinSize": 5,
+      "negRisk": true,
+      "restricted": false,
+      "umaResolutionStatus": "",
+      "volumeNum": 150000.0,
+      "liquidityNum": 40000.0,
+      "events": [
+        {
+          "id": "71020",
+          "title": "Riverton mayoral election 2026",
+          "slug": "riverton-mayor-2026",
+          "markets": [
+            {
+              "id": "620101"
+            },
+            {
+              "id": "620102"
+            },
+            {
+              "id": "620103"
+            },
+            {
+              "id": "620104"
+            }
+          ]
+        }
+      ],
+      "negRiskMarketID": "0xbbfe6db82ef9b2a8bc1949c17ee05cce2ec230042f809fb3345596f6f9058611",
+      "feesEnabled": true,
+      "feeSchedule": {
+        "exponent": 1,
+        "rate": 0.04,
+        "takerOnly": true,
+        "rebateRate": 0.2
+      }
+    }
+  ]
+}

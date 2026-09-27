@@ -1,0 +1,81 @@
+[project]
+name = "pm-arb"
+version = "0.1.0"
+description = "Read-only, paper-trading-only cross-venue prediction-market arbitrage research demo (Kalshi x Polymarket)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+    "httpx>=0.27",
+    "websockets>=13",
+    "sqlalchemy[asyncio]>=2.0.30",
+    "aiosqlite>=0.20",
+    "typer>=0.12",
+    "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+postgres = ["asyncpg>=0.29"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "respx>=0.21",
+    "hypothesis>=6.100",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+filterwarnings = ["error::DeprecationWarning:app.*"]
+markers = [
+    "live: tests that require network access to the venues (never run in CI by default)",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "BLE", "SIM", "RUF", "PL", "DTZ", "T20", "PTH", "N", "C4", "ASYNC"]
+ignore = [
+    "PLR0911", "PLR0912", "PLR0913", "PLR0915", "PLR0917", "PLR2004",
+    "S101",   # asserts are fine in tests; production code uses explicit raises
+    "RUF001", "RUF002", "RUF003",
+]
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 130
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S", "PLR", "T20", "DTZ001", "N802"]
+"app/cli.py" = ["T20", "PLR0915"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+warn_unreachable = true
+exclude = ["build/"]
+
+[[tool.mypy.overrides]]
+module = ["respx.*", "hypothesis.*"]
+ignore_missing_imports = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
